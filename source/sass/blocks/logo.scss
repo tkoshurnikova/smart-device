@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 202px;
+  flex-wrap: wrap;
+  height: 58px;
+}
+
+.logo--footer {
+  width: 216px;
+}
+
+.logo svg:first-child {
+  margin-right: 14px;
+}
+
+.logo svg:nth-child(2),
+.logo svg:nth-child(3) {
+  margin-top: 3px;
+}
+
+@media (max-width: 767px) {
+  .logo--header svg:first-child {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo--header svg:nth-child(2),
+  .logo--header svg:nth-child(3) {
+    display: none;
+  }
+}
