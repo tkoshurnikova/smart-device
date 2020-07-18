@@ -1,0 +1,41 @@
+.button {
+  display: block;
+  width: 185px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 45px;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.button--white {
+  color: #ffffff;
+  border-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: #ededed;
+    border-color: #ededed;
+  }
+}
+
+@media (max-width: 1023px) {
+  .button--only-desktop {
+    display: none;
+  }
+}
