@@ -1,0 +1,49 @@
+.accordion-element button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .accordion-element > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accordion-element button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      border: none;
+      outline: none;
+    }
+  }
+
+  .accordion-element ul,
+  .accordion-element address {
+    display: none;
+  }
+
+  .accordion-element--no-js ul,
+  .accordion-element--no-js address,
+  .accordion-element--opened ul,
+  .accordion-element--opened address {
+    display: block;
+  }
+
+  .accordion-element--no-js button {
+    display: none;
+  }
+}

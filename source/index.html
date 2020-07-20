@@ -83,8 +83,16 @@
       </div>
     </div>
     <div class="page-footer__navigation">
-      <nav>
-        <h3>Разделы сайта</h3>
+      <nav class="accordion-element accordion-element--no-js">
+        <div>
+          <h3>Разделы сайта</h3>
+          <button type="button">
+            <span class="visually-hidden">Открыть раздел</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 7.5V0H7.5V7.5H0V8.5H7.5V16H8.5V8.5H16V7.5H8.5Z" fill="#C4C4C4"/>
+            </svg>
+          </button>
+        </div>
         <ul>
           <li>
             <a href="">О компании</a>
@@ -109,8 +117,16 @@
           </li>
         </ul>
       </nav>
-      <div class="page-footer__address">
-        <h3>Наш офис</h3>
+      <div class="page-footer__address accordion-element accordion-element--opened accordion-element--no-js">
+        <div>
+          <h3>Наш офис</h3>
+          <button type="button">
+            <span class="visually-hidden">Закрыть раздел</span>
+            <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0.5H16V1.5H0V0.5Z" fill="#C4C4C4"/>
+            </svg>
+          </button>
+        </div>
         <address>
           <span>г. Мытищи, Олимпийский проспект, д.10</span>
           <a href="tel:+74955894050">+7 (495) 589-40-50</a>
@@ -120,9 +136,10 @@
       </div>
     </div>
     <div class="page-footer__copyright">
-      <p>Условия конфиденциальности</p>
-      <p>Developed by wow studio</p>
+      <a href="#">Условия конфиденциальности</a>
+      <a href="#">Developed by wow studio</a>
     </div>
   </footer>
+  <script src="js/accordion.js"></script>
 </body>
 </html>
