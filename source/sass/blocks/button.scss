@@ -14,6 +14,8 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
 
   background-color: transparent;
   border-width: 1px;
@@ -34,8 +36,48 @@
   }
 }
 
+.button--main {
+  width: 407px;
+  height: 55px;
+  background-color: #00b2ff;
+  font-size: 16px;
+  line-height: 55px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #0095d6;
+  }
+
+  &:active {
+    background-color: #007eb5;
+  }
+}
+
+.button__only-mobile {
+  display: none;
+}
+
 @media (max-width: 1023px) {
   .button--only-desktop {
     display: none;
+  }
+
+  .button--main {
+    width: 379px;
+  }
+}
+
+@media (max-width: 767px) {
+  .button--main {
+    width: 287px;
+  }
+
+  .button__mobile-hidden {
+    display: none;
+  }
+
+  .button__only-mobile {
+    display: inline;
   }
 }

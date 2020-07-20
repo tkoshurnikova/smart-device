@@ -1,9 +1,19 @@
 .page-header {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  box-sizing: border-box;
   padding: 28px 13.2%;
-  background-color: #1b2d37;
+  background-color: transparent;
+}
+
+.page-header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  flex-basis: 100%;
 }
 
 .page-header__right {
@@ -120,6 +130,10 @@
 @media (max-width: 767px) {
   .page-header {
     padding: 8px 5.3%;
+  }
+
+  .page-header__right a {
+    margin-right: 22px;
   }
 
   .page-header__email {

@@ -1,11 +1,19 @@
 .page-footer {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
   padding: 52px 13.2%;
   min-height: 317px;
   box-sizing: border-box;
   background-color: #fafafa;
+}
+
+.page-footer > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  max-width: 1500px;
 }
 
 .page-footer p,
