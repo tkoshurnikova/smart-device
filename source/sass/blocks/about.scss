@@ -1,6 +1,11 @@
 .about {
   margin: 0 19.5%;
   padding: 0 5px 68px 180px;
+}
+
+.about > div {
+  max-width: 1500px;
+  margin: auto;
   position: relative;
 }
 
@@ -24,12 +29,12 @@
   margin-bottom: 40px;
 }
 
-.about::before {
+.about > div::before {
   position: absolute;
   content: "2005";
   width: 317px;
   height: 220px;
-  left: -96px;
+  left: -279px;
   top: 50px;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
@@ -78,9 +83,9 @@
     margin-left: 3px;
   }
 
-  .about::before {
+  .about > div::before {
     top: 53px;
-    left: -104px;
+    left: -295px;
     width: 361.79px;
     height: 251.08px;
     font-size: 178.324px;
@@ -112,7 +117,7 @@
     margin-top: 27px;
   }
 
-  .about::before {
+  .about > div::before {
     display: none;
   }
 }

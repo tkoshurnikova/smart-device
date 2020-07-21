@@ -6,6 +6,7 @@
 
 .services > div {
   max-width: 1500px;
+  margin: auto;
 }
 
 .services h2 {
@@ -31,6 +32,7 @@
 .services__item {
   position: relative;
   width: calc(34.18% - 30px);
+  max-width: 370px;
   height: 620px;
   padding: 30px 3.8%;
   margin-right: 30px;
@@ -146,6 +148,7 @@
 
   .services__item {
     width: 100%;
+    max-width: 100%;
     height: 256px;
     margin-right: 0;
     margin-bottom: 46px;

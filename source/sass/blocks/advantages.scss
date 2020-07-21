@@ -1,6 +1,8 @@
 .advantages {
   padding: 109px 19.5%;
   padding-bottom: 80px;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .advantages ul {
@@ -14,6 +16,7 @@
 
 .advantages__item {
   flex-basis: calc(51% - 30px);
+  max-width: 730px;
   min-height: 299px;
   padding: 43px 40px 40px 41px;
   margin-bottom: 30px;
