@@ -13,7 +13,7 @@
 }
 
 .advantages__item {
-  width: 48.6%;
+  flex-basis: calc(51% - 30px);
   min-height: 299px;
   padding: 43px 40px 40px 41px;
   margin-bottom: 30px;
@@ -62,7 +62,7 @@
 
 @media (max-width: 1023px) {
   .advantages {
-    padding: 54px 3.1%;
+    padding: 54px 2.2%;
   }
 
   .advantages__item {
@@ -86,10 +86,11 @@
   }
 
   .advantages__item {
-    width: 100%;
+    flex: 1 0 100%;
     padding-bottom: 8px;
     padding-right: 21px;
     margin-bottom: 20px;
+    margin-right: 0;
   }
 
   .advantages__item:nth-child(2) {
