@@ -1,0 +1,27 @@
+.advantages-and-about {
+  background-image:
+    url("../img/triangle-with-circles-1.svg"),
+    url("../img/triangle-1.svg"),
+    url("../img/triangle-with-circles-2.svg"),
+    url("../img/triangle-2.svg");
+  background-position:
+    -236px 443px,
+    201px 45px,
+    559px 147px,
+    1555px 398px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1023px) {
+  .advantages-and-about {
+    background-image: url("../img/triangle-with-circles-2.svg");
+    background-position: 210px 90px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages-and-about {
+    background-position: -120px 652px;
+  }
+}
