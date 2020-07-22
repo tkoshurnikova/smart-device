@@ -1,0 +1,28 @@
+.popup {
+  position: absolute;
+  top: 136px;
+  left: calc(50% - 245px);
+  width: 490px;
+  min-height: 605px;
+  box-sizing: border-box;
+  padding: 29px 41px;
+  background-color: #00b2ff;
+}
+
+.popup--closed {
+  display: none;
+}
+
+.popup__close-button {
+  position: absolute;
+  top: 18px;
+  right: 13px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup__close-button:hover path,
+.popup__close-button:focus path {
+  fill: rgba(255, 255, 255, 0.5);
+}
