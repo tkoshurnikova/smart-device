@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 28px 13.2%;
+  padding: 28px 0;
   background-color: transparent;
 }
 
@@ -12,8 +12,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1500px;
-  flex-basis: 100%;
+  max-width: 1414px;
+  min-width: 960px;
+  flex-basis: 95%;
 }
 
 .page-header__right {
@@ -97,6 +98,10 @@
     padding: 18px 3.2%;
   }
 
+  .page-header > div {
+    min-width: 717px;
+  }
+
   .page-header__right {
     max-width: 500px;
   }
@@ -130,6 +135,10 @@
 @media (max-width: 767px) {
   .page-header {
     padding: 8px 5.3%;
+  }
+
+  .page-header > div {
+    min-width: 287px;
   }
 
   .page-header__right a {
