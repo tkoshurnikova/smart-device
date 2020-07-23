@@ -1,5 +1,5 @@
 .popup {
-  position: absolute;
+  position: fixed;
   top: 136px;
   left: calc(50% - 245px);
   width: 490px;
@@ -7,6 +7,8 @@
   box-sizing: border-box;
   padding: 29px 41px;
   background-color: #00b2ff;
+  z-index: 10;
+  overflow: hidden;
 }
 
 .popup--closed {

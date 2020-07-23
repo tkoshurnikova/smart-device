@@ -10,30 +10,56 @@
     var formName = form.querySelector('[name=popup-name]');
     var formPhone = form.querySelector('[name=popup-phone]');
     var formMessage = form.querySelector('[name=popup-question]');
+    var overlay = document.querySelector('.overlay');
+    var body = document.querySelector('body');
     var isStorageSupport = true;
+    var storage = '';
 
     try {
-      var nameInput = localStorage.getItem('formName');
-      var phoneInput = localStorage.getItem('formPhone');
-      var messageInput = localStorage.getItem('formMessage');
+      storage = localStorage.getItem('formName');
     } catch (err) {
       isStorageSupport = false;
     }
 
-    openPopupButton.addEventListener('click', function (evt) {
+    var onOpenButtonClick = function (evt) {
       evt.preventDefault();
       popup.classList.remove('popup--closed');
+      overlay.classList.remove('overlay--hidden');
+      body.classList.add('no-scroll');
+      formName.focus();
+      window.addEventListener('keydown', onEscPress);
+      if (storage) {
+        formName.value = storage;
+        formPhone.value = localStorage.getItem('formPhone');
+        formMessage.value = localStorage.getItem('formMessage');
+      }
+    };
 
+    var onCloseButtonClick = function (evt) {
+      evt.preventDefault();
+      popup.classList.add('popup--closed');
+      overlay.classList.add('overlay--hidden');
+      body.classList.remove('no-scroll');
+      window.removeEventListener('keydown', onEscPress);
+    };
+
+    var onEscPress = function (evt) {
+      if (evt.keyCode === 27 && !popup.classList.contains('popup--closed')) {
+        onCloseButtonClick(evt);
+      }
+    };
+
+    openPopupButton.addEventListener('click', onOpenButtonClick);
+
+    form.addEventListener('submit', function () {
       if (isStorageSupport) {
-        formName.value = nameInput;
-        formPhone.value = phoneInput;
-        formMessage.value = messageInput;
+        localStorage.setItem('formName', formName.value);
+        localStorage.setItem('formPhone', formPhone.value);
+        localStorage.setItem('formMessage', formMessage.value);
       }
     });
 
-    closePopup.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      popup.classList.add('popup--closed');
-    });
+    closePopup.addEventListener('click', onCloseButtonClick);
+    overlay.addEventListener('click', onCloseButtonClick);
   }
 })();
