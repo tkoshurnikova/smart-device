@@ -5,7 +5,7 @@
   padding: 52px 0;
   min-height: 317px;
   box-sizing: border-box;
-  background-color: #fafafa;
+  background-color: $footer-background;
 }
 
 .page-footer > div {
@@ -29,7 +29,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #1b2d37;
+  color: $background;
   opacity: 0.5;
 }
 
@@ -47,7 +47,7 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #1b2d37;
+  color: $background;
 }
 
 .page-footer__social {
@@ -126,7 +126,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  color: #1b2d37;
+  color: $background;
   opacity: 0.5;
   text-decoration: none;
 }
@@ -159,16 +159,16 @@
   opacity: 0.2;
 }
 
-.page-footer a:hover,
-.page-footer a:focus {
+.page-footer a[href]:hover,
+.page-footer a[href]:focus {
   opacity: 0.8;
 }
 
-.page-footer a:active {
-  opacity: 1;
+.page-footer a[href]:active {
+  opacity: 0.7;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .page-footer {
     padding: 11px 3.4%;
     padding-top: 7px;
@@ -269,7 +269,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .page-footer {
     padding: 13px 5.1%;
     padding-top: 35px;

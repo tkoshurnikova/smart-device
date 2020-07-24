@@ -15,7 +15,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: $white;
 
   background-color: transparent;
   border-width: 1px;
@@ -32,48 +32,48 @@
 }
 
 .button--white {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: $white;
+  border-color: $white;
 
   &:hover,
   &:focus {
-    color: #ededed;
-    border-color: #ededed;
+    color: $light-gray;
+    border-color: $light-gray;
   }
 }
 
 .button--blue {
   width: 180px;
-  color: #00b2ff;
-  border-color: #00b2ff;
+  color: $blue;
+  border-color: $blue;
 
   &:hover,
   &:focus {
-    color: #0095d6;
-    border-color: #0095d6;
+    color: $medium-blue;
+    border-color: $medium-blue;
   }
 
   &:active {
-    color: #007eb5;
-    border-color: #007eb5;
+    color: $dark-blue;
+    border-color: $dark-blue;
   }
 }
 
 .button--main {
   width: 407px;
   height: 55px;
-  background-color: #00b2ff;
+  background-color: $blue;
   font-size: 16px;
   line-height: 55px;
   border: none;
 
   &:hover,
   &:focus {
-    background-color: #0095d6;
+    background-color: $medium-blue;
   }
 
   &:active {
-    background-color: #007eb5;
+    background-color: $dark-blue;
   }
 }
 
@@ -81,7 +81,7 @@
   display: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .button--only-desktop {
     display: none;
   }
@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .button--main {
     width: 287px;
   }

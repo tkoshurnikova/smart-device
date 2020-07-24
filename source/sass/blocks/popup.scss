@@ -6,7 +6,7 @@
   min-height: 605px;
   box-sizing: border-box;
   padding: 29px 41px;
-  background-color: #00b2ff;
+  background-color: $blue;
   z-index: 10;
   overflow: hidden;
 }
@@ -24,7 +24,9 @@
   cursor: pointer;
 }
 
-.popup__close-button:hover path,
-.popup__close-button:focus path {
-  fill: rgba(255, 255, 255, 0.5);
+.popup__close-button:hover,
+.popup__close-button:focus,
+.popup__close-button:active {
+  outline: none;
+  opacity: 0.5;
 }

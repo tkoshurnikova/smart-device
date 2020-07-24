@@ -1,7 +1,7 @@
 .form-block {
   padding-top: 92px;
   padding-bottom: 113px;
-  background-color: #00b2ff;
+  background-color: $blue;
   background-image:
     url("../img/paper_airplane.svg"),
     url("../img/triangles.svg"),
@@ -27,14 +27,14 @@
   margin-right: 18.2%;
   padding-left: 15px;
   padding-right: 25px;
-  background-color: #00b2ff;
+  background-color: $blue;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .form-block {
     padding-top: 80px;
     padding-bottom: 104px;
-    background: #00b2ff;
+    background: $blue;
   }
 
   .form-block > div {
@@ -43,7 +43,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .form-block {
     padding-top: 30px;
     padding-bottom: 42px;

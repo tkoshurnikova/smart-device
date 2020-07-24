@@ -3,7 +3,7 @@
   justify-content: center;
   padding-top: 90px;
   padding-bottom: 97px;
-  background-color: #1b2d37;
+  background-color: $background;
 }
 
 .services > div {
@@ -19,7 +19,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  color: #ffffff;
+  color: $white;
 }
 
 .services ul {
@@ -37,12 +37,10 @@
   width: calc(34.18% - 30px);
   max-width: 370px;
   height: 620px;
-  padding: 30px 3.8%;
   margin-right: 30px;
   margin-bottom: 30px;
   box-sizing: border-box;
-  background-color: #26353d;
-  cursor: pointer;
+  background-color: $services-item-background;
 }
 
 .services__item:last-child {
@@ -93,18 +91,23 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  color: $white;
 }
 
 .services__item a {
+  position: relative;
+  z-index: 10;
+  display: block;
   width: 100%;
   height: 100%;
+  padding: 30px 12%;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
 .services__item:hover div,
 .services__item:focus div {
-  background-color: #0095d6;
+  background-color: $medium-blue;
 }
 
 .services__item:hover::after,
@@ -113,7 +116,7 @@
 }
 
 .services__item:active div {
-  background-color: #007eb5;
+  background-color: $dark-blue;
 }
 
 .services__item:active::after {
@@ -122,19 +125,18 @@
 
 .services__item div {
   position: absolute;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: 0;
   bottom: 0;
   z-index: 5;
   width: 63px;
   height: 63px;
-  background-color: #00b2ff;
-  background-image: url("../img/icons/icon-arrow-right.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: $blue;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .services {
     padding: 50px 1.6% 31px 0.7%;
   }
@@ -155,11 +157,14 @@
     height: 256px;
     margin-right: 0;
     margin-bottom: 46px;
+  }
+
+  .services__item a {
     padding: 20px 6.4%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .services {
     padding: 50px 3%;
     padding-bottom: 34px;
@@ -178,6 +183,9 @@
 
   .services__item {
     margin-bottom: 30px;
+  }
+
+  .services__item a {
     padding: 0 11.4%;
   }
 }

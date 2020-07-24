@@ -48,29 +48,17 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: #ededed;
+    opacity: 0.8;
   }
 
   &:active {
-    color: #c9c9c9;
+    opacity: 0.6;
   }
-}
-
-.page-header__email:hover path,
-.page-header__email:focus path,
-.page-header__phone:hover path,
-.page-header__phone:focus path {
-  fill: #0089c4;
-}
-
-.page-header__email:active path,
-.page-header__phone:active path {
-  fill: #003247;
 }
 
 .page-header__email svg,
@@ -94,7 +82,7 @@
   margin-left: 6px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .page-header {
     padding: 18px 3.2%;
   }
@@ -133,7 +121,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .page-header {
     padding: 8px 5.3%;
   }

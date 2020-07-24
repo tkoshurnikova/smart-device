@@ -3,7 +3,7 @@
   margin-top: -143px;
   padding-bottom: 20px;
   box-sizing: border-box;
-  background-color: #1b2d37;
+  background-color: $background;
   background-image:
     url("../img/main-bg@1x.png"),
     url("../img/circuit-board@1x.png"),
@@ -47,7 +47,7 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
 }
 
 .main-screen p {
@@ -61,7 +61,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
-  color: #ffffff;
+  color: $white;
 }
 
 .main-screen p::before {
@@ -71,7 +71,7 @@
   content: "";
   width: 66px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .main-screen__button {
@@ -88,7 +88,7 @@
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
-  color: #ffffff;
+  color: $white;
   opacity: 0.5;
   transform: rotate(-90deg);
 
@@ -102,7 +102,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .main-screen {
     min-height: 706px;
     margin-top: -114px;
@@ -149,7 +149,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .main-screen {
     min-height: 687px;
     background-size:

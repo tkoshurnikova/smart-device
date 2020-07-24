@@ -7,6 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.9;
+    }
   }
 
   .accordion-element button {
@@ -23,6 +29,7 @@
     &:hover,
     &:focus {
       opacity: 0.5;
+      outline: none;
     }
 
     &:active {
