@@ -186,13 +186,12 @@
   }
 
   .services__item a {
-    top: -21px;
+    top: 0;
     padding: 0 11.4%;
     padding-top: 21px;
   }
 
-  .services__item div {
-    right: -2px;
-    bottom: -21px;
+  .services__item p {
+    margin-top: 0;
   }
 }
