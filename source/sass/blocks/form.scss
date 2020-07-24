@@ -64,7 +64,7 @@
 
 .form input[type="text"],
 .form input[type="tel"] {
-  width: 270px;
+  width: 47%;
   height: 50px;
   padding: 14px;
   padding-left: 16px;
@@ -182,7 +182,7 @@
 
 @media (max-width: $tablet-width) {
   .form {
-    padding-left: 76px;
+    padding-left: 72px;
     padding-right: 62px;
     padding-top: 0;
   }

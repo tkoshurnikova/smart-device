@@ -1,4 +1,6 @@
 .advantages-and-about {
+  display: flex;
+  flex-direction: column;
   background-image:
     url("../img/triangle-with-circles-1.svg"),
     url("../img/triangle-1.svg"),
@@ -12,16 +14,30 @@
   background-repeat: no-repeat;
 }
 
+.advantages-and-about > div {
+  width: 95%;
+  max-width: 1174px;
+  margin: auto;
+}
+
 @media (max-width: $tablet-width) {
   .advantages-and-about {
     background-image: url("../img/triangle-with-circles-2.svg");
     background-position: 210px 90px;
     background-repeat: no-repeat;
   }
+
+  .advantages-and-about > div {
+    width: 95.6%;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .advantages-and-about {
     background-position: -120px 652px;
+  }
+
+  .advantages-and-about > div {
+    width: 100%;
   }
 }
