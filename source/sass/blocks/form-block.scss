@@ -6,15 +6,18 @@
   background-color: $blue;
   background-image:
     url("../img/triangles.svg"),
+    url("../img/paper_airplane.svg"),
     url("../img/triangle-2.svg"),
     url("../img/triangle-1.svg");
   background-repeat: no-repeat;
   background-position:
     6% -51px,
+    calc(100% - 835px) 163px,
     105.5% 209px,
     99% 90px;
   background-size:
     776px 722px,
+    50% 43%,
     427px 404px,
     260px 260px;
 }
@@ -27,11 +30,8 @@
   margin: auto;
 }
 
-.form-block img {
-  margin-top: 70px;
-  margin-left: -25px;
-  width: 43%;
-  flex-shrink: 1;
+.form-block form {
+  margin-left: auto;
 }
 
 @media (max-width: $tablet-width) {
@@ -47,11 +47,7 @@
     width: 100%;
   }
 
-  .form-block img {
-    display: none;
-  }
-
-  .form-block div {
+  .form-block form {
     margin: auto;
   }
 }

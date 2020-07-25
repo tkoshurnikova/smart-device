@@ -103,6 +103,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-bottom: 55px;
   list-style: none;
 }
 
@@ -113,6 +114,8 @@
 .page-footer__address {
   flex-grow: 0;
   flex-basis: 33.8%;
+  padding-bottom: 50px;
+  box-sizing: border-box;
 }
 
 .page-footer__address a {

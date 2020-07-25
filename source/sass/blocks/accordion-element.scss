@@ -7,12 +7,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
 
     &:hover,
     &:focus {
       opacity: 0.9;
     }
+  }
+
+  .accordion-element h3 {
+    cursor: pointer;
   }
 
   .accordion-element button {
@@ -52,5 +55,14 @@
 
   .accordion-element--no-js button {
     display: none;
+  }
+
+  .accordion-element--no-js h3 {
+    cursor: default;
+  }
+
+  .accordion-element--no-js > div:hover,
+  .accordion-element--no-js > div:focus {
+    opacity: 1;
   }
 }

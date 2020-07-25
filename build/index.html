@@ -7,8 +7,8 @@
     <meta name="description" content="Печатные платы - производство и монтаж, поставка комплектующих, блоков и модулей">
     <title>Smart Device</title>
     <link rel="preload" href="fonts/ptmono.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="fonts/Robotocondensed.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/robotocondensed.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
@@ -185,25 +185,22 @@
       </section>
       <section class="form-block" id="form-block">
         <div>
-          <img src="img/paper_airplane.svg" width="511" height="288">
-          <div>
-            <form class="form" method="post">
-              <h2>Остались вопросы? Задайте их нам!</h2>
-              <p>Мы проконсультируем Вас бесплатно</p>
-              <p>
-                <label class="visually-hidden" for="name">Имя</label>
-                <input type="text" name="name" id="name" placeholder="Имя" aria-label="Имя" required="">
-                <label class="visually-hidden" for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone" placeholder="Телефон" aria-label="Телефон" maxlength="17" required="">
-              </p>
-              <textarea name="question" placeholder="Ваш вопрос" aria-label="Ваш вопрос" rows="5" required=""></textarea>
-              <p>
-                <button class="button button--white" type="submit">Задать вопрос</button>
-                <input class="visually-hidden" type="checkbox" name="personal-data" id="personal-data" aria-label="Согласие на обработку персональных данных" checked="" required="">
-                <label for="personal-data">Я согласен на обработку персональных данных</label>
-              </p>
-            </form>
-          </div>
+          <form class="form" method="post">
+            <h2>Остались вопросы? Задайте их нам!</h2>
+            <p>Мы проконсультируем Вас бесплатно</p>
+            <p>
+              <label class="visually-hidden" for="name">Имя</label>
+              <input type="text" name="name" id="name" placeholder="Имя" aria-label="Имя" required="">
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" aria-label="Телефон" maxlength="17" required="">
+            </p>
+            <textarea name="question" placeholder="Ваш вопрос" aria-label="Ваш вопрос" rows="5" required=""></textarea>
+            <p>
+              <button class="button button--white" type="submit">Задать вопрос</button>
+              <input class="visually-hidden" type="checkbox" name="personal-data" id="personal-data" aria-label="Согласие на обработку персональных данных" checked="" required="">
+              <label for="personal-data">Я согласен на обработку персональных данных</label>
+            </p>
+          </form>
         </div>
       </section>
     </main>
@@ -242,7 +239,7 @@
         </div>
         <div class="page-footer__navigation">
           <nav class="accordion-element accordion-element--no-js">
-            <div id="open-section">
+            <div>
               <h3>Разделы сайта</h3>
               <button type="button">
                 <span class="visually-hidden">Открыть раздел</span>
@@ -274,7 +271,7 @@
             </ul>
           </nav>
           <div class="page-footer__address accordion-element accordion-element--opened accordion-element--no-js">
-            <div id="open-section">
+            <div>
               <h3>Наш офис</h3>
               <button type="button">
                 <span class="visually-hidden">Закрыть раздел</span>
