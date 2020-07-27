@@ -236,10 +236,12 @@
   .page-footer__navigation ul {
     height: auto;
     column-count: 1;
+    padding-bottom: 0;
   }
 
   .page-footer__address {
     flex-basis: 47.6%;
+    padding-bottom: 0;
   }
 
   .page-footer__copyright {
