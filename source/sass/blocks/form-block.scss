@@ -7,14 +7,14 @@
   background-image:
     url("../img/triangles.svg"),
     url("../img/paper_airplane.svg"),
-    url("../img/triangle-2.svg"),
-    url("../img/triangle-1.svg");
+    url("../img/triangle-2-low-opacity.svg"),
+    url("../img/triangle-1-low-opacity.svg");
   background-repeat: no-repeat;
   background-position:
-    6% -51px,
+    calc((100% - 1003px) / 2) -51px,
     calc((100% - 711px) / 2) 163px,
-    105.5% 209px,
-    99% 90px;
+    calc((100% + 1660px) / 2) 209px,
+    calc((100% + 1620px) / 2) 90px;
   background-size:
     776px 722px,
     50% 43%,
